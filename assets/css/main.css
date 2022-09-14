@@ -444,3 +444,79 @@
 .intro-slider-control-item i{
   color: #fff;
 }
+
+.main-video{
+  background: url(../images/bg-main-video.png) no-repeat center center;
+  background-size: 100% 100%;
+  padding: 50px 0 50px;
+  color: #fff;
+  min-height: 520px;
+}
+
+.video-content-desc{
+  font-size: 16px;
+  text-align: center;
+}
+
+.video-content-title{
+  font-weight: 600;
+  text-align: center;
+}
+
+.accordion{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accordion-item{
+  width: 100%;
+}
+
+.accordion-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-item button{
+  width: 94%;
+  background-color: #FBBB28;
+  border: none;
+
+  font-size: 20px;
+  color: rgb(31, 31, 31);
+
+  font-weight: 700;
+  padding: 10px;
+
+  border-radius: 30px;
+}
+
+.accordion-item button:focus,
+.accordion-item button:focus-visible{
+  border: none;
+  outline: none;
+}
+
+.accordion-body{
+  text-align: justify;
+  padding: 0 25px 10px;
+}
+
+.accor-title{
+  position: relative;
+  width: 100%;
+}
+
+.accor-title-icon{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translate(0,-50%);
+  display: flex;
+  align-items: center;
+}
+
+.accor-title-icon i{
+  font-size: 14px;
+}
