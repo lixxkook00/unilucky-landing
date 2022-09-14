@@ -61,7 +61,42 @@ var swiper = new Swiper(".swiper-partner", {
 });
 
 
-var swiper = new Swiper(".swiper-feedback", {
+var swiper = new Swiper(".swiperFeedback", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // auto
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 480px
+        120: {
+        slidesPerView: 1,
+        spaceBetween: 2
+        },
+        // when window width is >= 640px
+        740: {
+        slidesPerView: 1,
+        spaceBetween: 4
+        },
+        1023: {
+        slidesPerView: 1,
+        spaceBetween: 1
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper = new Swiper(".swiperPartner", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
@@ -94,6 +129,73 @@ var swiper = new Swiper(".swiper-feedback", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper = new Swiper(".swiper-product-1", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // auto
+    autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+    },
+    loop:true,
+    loopedSlides: 50,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    speed: 4000,
+    breakpoints: {
+        // when window width is >= 480px
+        120: {
+        slidesPerView: 1,
+        spaceBetween: 2
+        },
+        // when window width is >= 640px
+       // when window width is >= 640px
+        740: {
+        slidesPerView: 2,
+        spaceBetween: 12
+        },
+        1023: {
+        slidesPerView: 6,
+        spaceBetween: 12
+        }
+    },
+});
+
+var swiper = new Swiper(".swiper-product-2", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // auto
+    autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    speed: 4000,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 480px
+        120: {
+        slidesPerView: 1,
+        spaceBetween: 2
+        },
+        // when window width is >= 640px
+       // when window width is >= 640px
+        740: {
+        slidesPerView: 2,
+        spaceBetween: 12
+        },
+        1023: {
+        slidesPerView: 6,
+        spaceBetween: 12
+        }
     },
 });
 
