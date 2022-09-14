@@ -117,36 +117,36 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
     }
 }
 
-let animationStatus = false;
+// let animationStatus = false;
 
-document.addEventListener('scroll', function() {
+// document.addEventListener('scroll', function() {
 
-    if(document.getElementById("number").getBoundingClientRect().top < screen.height/2 && !animationStatus){
-        animationStatus = true
+//     if(document.getElementById("number").getBoundingClientRect().top < screen.height/2 && !animationStatus){
+//         animationStatus = true
 
-        animateNumber(1500000, 2000, 0, function(number) {
-            const formattedNumber = number.toLocaleString()
-            document.getElementById('users-count').innerText = formattedNumber + '+';
-        })
+//         animateNumber(1500000, 2000, 0, function(number) {
+//             const formattedNumber = number.toLocaleString()
+//             document.getElementById('users-count').innerText = formattedNumber + '+';
+//         })
 
-        animateNumber(5000, 2000, 0, function(number) {
-            const formattedNumber = number.toLocaleString()
-            document.getElementById('ctv-count').innerText = formattedNumber + '+';
-        })
+//         animateNumber(5000, 2000, 0, function(number) {
+//             const formattedNumber = number.toLocaleString()
+//             document.getElementById('ctv-count').innerText = formattedNumber + '+';
+//         })
 
-        animateNumber(270, 2000, 0, function(number) {
-            const formattedNumber = number.toLocaleString()
-            document.getElementById('partner-count').innerText = formattedNumber + '+';
-        })
+//         animateNumber(270, 2000, 0, function(number) {
+//             const formattedNumber = number.toLocaleString()
+//             document.getElementById('partner-count').innerText = formattedNumber + '+';
+//         })
 
-        animateNumber(7, 7000, 0, function(number) {
-            const formattedNumber = number.toLocaleString()
-            document.getElementById('office-count').innerText = formattedNumber + '+';
-        })
-    }
+//         animateNumber(7, 7000, 0, function(number) {
+//             const formattedNumber = number.toLocaleString()
+//             document.getElementById('office-count').innerText = formattedNumber + '+';
+//         })
+//     }
 
     
-})
+// })
 
 const handleRegisterOnMobile = () => {
     toggleNavMobile()

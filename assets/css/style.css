@@ -4,6 +4,8 @@ html,body{
     scroll-behavior: smooth;
     background-color: #fff;
     font-family: 'Play', sans-serif;
+
+    overflow-x: hidden;
 }
 
 .soft-menu__item a{
@@ -379,4 +381,26 @@ a:hover{
 
 .header-buttons div:first-child{
   margin-right: 8px;
+}
+
+.noti{
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+
+  background-color: #FBBA29;
+  color: #000;
+
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.noti-icon i{
+  color: #000 !important;
+  padding: 4px;
+}
+
+.noti .noti-content i{
+  font-size: 12px;
+  color: #7C1116;
 }

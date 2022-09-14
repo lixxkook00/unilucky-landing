@@ -370,7 +370,7 @@
 }
 
 .bg-header{
-  height: 100vh;
+  height: calc(100vh - 34px);
   width: 100vw;
 
   background: url(../images/background-intro.jpg) no-repeat center center;
