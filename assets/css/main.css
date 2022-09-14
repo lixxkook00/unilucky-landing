@@ -193,7 +193,7 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: #52c385ae;
+    background-color: #fbb82998;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,9 +209,10 @@
 .scroll-to-top:hover{
   cursor: pointer;
   transform: scale(1.3);
-  background-color: #52C384;
+  background-color: #FBB929;
 }
 .scroll-to-top:hover i{
+  color: #000;
   transform: scale(1.3) rotate(360deg);
 }
 
@@ -374,4 +375,72 @@
 
   background: url(../images/background-intro.jpg) no-repeat center center;
   background-size: 100% 100%;
+}
+
+.intro-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.intro-wrapper-content{
+  display: flex;
+  width: 100%;
+}
+
+.intro-title{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-img{
+  margin-top: 10px;
+  height: 70px;
+  width: auto !important;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.button-img:hover{
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.intro-title img{
+  width: 80%;
+}
+
+.intro-slider{
+  width: 65%; 
+  transform: translateX(30px)
+}
+
+.intro-card img{
+  transform: scale(1.16)
+}
+
+.intro-slider-control{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+
+  margin: 10px 0;
+}
+
+.intro-slider-control-item{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.intro-slider-control-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.intro-slider-control-item i{
+  color: #fff;
 }

@@ -47,11 +47,11 @@ var swiper = new Swiper(".swiper-partner", {
         // when window width is >= 640px
         740: {
         slidesPerView: 3,
-        spaceBetween: 15
+        spaceBetween: 4
         },
         1023: {
         slidesPerView: 4,
-        spaceBetween: 4
+        spaceBetween: 1
         }
     },
     navigation: {
