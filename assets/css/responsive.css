@@ -138,6 +138,14 @@
     .intro-title--wrapper img{
         padding: 90px;
     }
+
+    .modal-content{
+        transform: translateY(32vh) scale(0.95);
+    }
+
+    .modal-video{
+        transform: translateX(-18vw);
+    }
 }
 
 /* Mobile Only */
@@ -146,6 +154,27 @@
         display: none !important;
     }
 
+    .modal-video-content{
+        height: 53%;
+        position: absolute;
+        top: 9%;
+        left: 12%;
+        width: 78%;
+        border-radius: 9px;
+        overflow: hidden;
+    }
+
+    .video-comment{
+        display: none;
+    }
+
+    .modal-content{
+        transform: translateY(32vh) scale(0.95);
+    }
+
+    .modal-video{
+        transform: translateX(-2vw);
+    }
     
     .centering-mobile{
         display: flex;

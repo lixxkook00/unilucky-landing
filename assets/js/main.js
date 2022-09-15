@@ -59,7 +59,7 @@ var swiper1 = new Swiper(".swiper-partner", {
 
 swiper1.on('transitionEnd', function() {
     const currentIndex = swiper1.realIndex
-    $('#intro-title--wrapper').style.transform = `translateX(-${currentIndex*25}%)`
+    $('#intro-title--wrapper').style.transform = `translateX(-${currentIndex*16.6667}%)`
 });
 
 var swiper2 = new Swiper(".swiperFeedback", {
@@ -137,10 +137,10 @@ var swiper4 = new Swiper(".swiper-product-1", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
-    // autoplay: {
-    //     delay: 500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+    },
     loop:true,
     loopedSlides: 50,
     pagination: {
@@ -171,10 +171,10 @@ var swiper5 = new Swiper(".swiper-product-2", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
-    // autoplay: {
-    //     delay: 500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+    },
     loop: true,
     speed: 4000,
     pagination: {
@@ -220,36 +220,36 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
     }
 }
 
-// let animationStatus = false;
+let animationStatus = false;
 
-// document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function() {
 
-//     if(document.getElementById("number").getBoundingClientRect().top < screen.height/2 && !animationStatus){
-//         animationStatus = true
+    if(document.getElementById("community").getBoundingClientRect().top < screen.height/2 && !animationStatus){
+        animationStatus = true
 
-//         animateNumber(1500000, 2000, 0, function(number) {
-//             const formattedNumber = number.toLocaleString()
-//             document.getElementById('users-count').innerText = formattedNumber + '+';
-//         })
+        animateNumber(1000000, 2000, 0, function(number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('users-count').innerText = formattedNumber + '+';
+        })
 
-//         animateNumber(5000, 2000, 0, function(number) {
-//             const formattedNumber = number.toLocaleString()
-//             document.getElementById('ctv-count').innerText = formattedNumber + '+';
-//         })
+        animateNumber(100, 2000, 0, function(number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('ctv-count').innerText = formattedNumber + '+';
+        })
 
-//         animateNumber(270, 2000, 0, function(number) {
-//             const formattedNumber = number.toLocaleString()
-//             document.getElementById('partner-count').innerText = formattedNumber + '+';
-//         })
+        animateNumber(300, 2000, 0, function(number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('partner-count').innerText = formattedNumber + '+';
+        })
 
-//         animateNumber(7, 7000, 0, function(number) {
-//             const formattedNumber = number.toLocaleString()
-//             document.getElementById('office-count').innerText = formattedNumber + '+';
-//         })
-//     }
+        animateNumber(171 , 3000, 0, function(number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('office-count').innerText = '+'+ formattedNumber + ' triệu';
+        })
+    }
 
     
-// })
+})
 
 const handleRegisterOnMobile = () => {
     toggleNavMobile()
