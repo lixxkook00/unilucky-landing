@@ -137,10 +137,10 @@ var swiper4 = new Swiper(".swiper-product-1", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
-    autoplay: {
-        delay: 500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 500,
+    //     disableOnInteraction: false,
+    // },
     loop:true,
     loopedSlides: 50,
     pagination: {
@@ -171,10 +171,10 @@ var swiper5 = new Swiper(".swiper-product-2", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
-    autoplay: {
-        delay: 500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 500,
+    //     disableOnInteraction: false,
+    // },
     loop: true,
     speed: 4000,
     pagination: {

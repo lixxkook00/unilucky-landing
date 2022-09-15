@@ -79,26 +79,20 @@
                     <i class="fa-solid fa-user-group"></i>Về chúng tôi
                 </a>
             </li>
-            <li class="soft-menu__item hehe">
+            <li onclick="toggleNavMobile()" class="soft-menu__item hehe">
                 <a class="" href="#product" data-address="machine">
-                    <i class="fa-solid fa-cart-shopping"></i>Điểm nổi bật
-                </a>
-
-                <!-- sub -->
-            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#policy" data-address="service">
-                    <i class="fa-solid fa-book"></i>Chính sách
+                    <i class="fa-solid fa-cart-shopping"></i>Sản phẩm nổi bật
                 </a>
             </li>
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#feedback" data-address="vision">
-                    <i class="fa-solid fa-comments"></i>Hướng dẫn
+                <a class="" href="#tutorial" data-address="service">
+                    <i class="fa-solid fa-book"></i>Hướng dẫn tham gia
                 </a>
             </li>
 
-            <div class="soft-menu__item soft-menu__item-sub">
-                <a href="https://unilucky.vn/account/login">
-                    <i class="fa-sharp fa-solid fa-user-plus"></i> Đăng ký
+            <div onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
+                <a href="#register">
+                    <i class="fa-sharp fa-solid fa-user-plus"></i> Đăng kí ngay
                 </a>
             </div>
         </ul>
@@ -124,19 +118,15 @@
                             </a>
 
                             <a href="#product" class="header-item">
-                                Điểm nổi bật
+                                Sản phẩm nổi bật
                             </a>
 
-                            <a href="#policy" class="header-item">
-                                Chính sách
+                            <a href="#tutorial" class="header-item">
+                                Hướng dẫn tham gia
                             </a>
 
-                            <a href="#feedback" class="header-item">
-                                Hướng dẫn
-                            </a>
-
-                            <a href="#feedback" class="header-item">
-                                Tiện ích
+                            <a href="https://unilucky.vn/account/login" class="header-item centering header-button">
+                                Đăng kí ngay
                             </a>
                         </div>
 
@@ -207,7 +197,7 @@
     </div>
 
     <!-- NOTI -->
-    <div class="noti">
+    <div id="about" class="noti">
         <div class="noti-icon centering">
             <i class="fa-solid fa-volume-high text-light"></i>
         </div>
@@ -785,7 +775,7 @@
     </div>
 
     <!-- Product -->
-    <div class="product">
+    <div id="product" class="product">
         <div class="why-title product-title text-center">
             Sản phẩm đa dạng, giá trị khủng với nhiều ưu đãi hấp dẫn
         </div>
@@ -799,45 +789,52 @@
                     <div class="swiper swiper-product-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/apple-watch-se-40mm-vien-nhom-day-silicone"
+                                    class="product-card">
                                     <img src="./assets/images/1.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/laptop-hp-pavilion-15-eg2056tu-i5-1240p-8gb-512gb-win11-6k786pa"
+                                    class="product-card">
                                     <img src="./assets/images/2.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/xe-o-to-honda-civic-1.5-rs"
+                                    class="product-card">
                                     <img src="./assets/images/3.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/chuot-khong-day-rapoo-m216-den"
+                                    class="product-card">
                                     <img src="./assets/images/4.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/xe-may-sh-150i-sport-abs"
+                                    class="product-card">
                                     <img src="./assets/images/5.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/tai-nghe-chup-tai-bluetooth-sony-wh-xb910n-den"
+                                    class="product-card">
                                     <img src="./assets/images/6.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/ghe-massage-toshiko-t6"
+                                    class="product-card">
                                     <img src="./assets/images/7.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -847,45 +844,52 @@
                     <div class="swiper swiper-product-2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/iphone-13-pro-max-256gb"
+                                    class="product-card">
                                     <img src="./assets/images/8.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/loa-vi-tinh-bluetooth-microlab-m600bt-den"
+                                    class="product-card">
                                     <img src="./assets/images/9.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/noi-chien-khong-dau-kangaroo-kg55af1a-5.2-lit"
+                                    class="product-card">
                                     <img src="./assets/images/10.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/laptop-apple-macbook-pro-m2-2022-8gb-256gb-10-core-gpu-mneh3sa-a"
+                                    class="product-card">
                                     <img src="./assets/images/11.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/dong-ho-seiko-nam-day-da-xanh-mat-xanh-ssb333p1-43mm-quartz"
+                                    class="product-card">
                                     <img src="./assets/images/12.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/dieu-hoa-daikin-ftky35wmvmv-inverter-12000btu-1"
+                                    class="product-card">
                                     <img src="./assets/images/13.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="product-card">
+                                <a href="https://unilucky.vn/product/detail/tu-lanh-sharp-sj-fx420vg-bk-inverter-362-lit"
+                                    class="product-card">
                                     <img src="./assets/images/14.jpg" alt="">
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -895,26 +899,26 @@
     </div>
 
     <div class="bg-center">
-        <!-- banner -->
-        <div class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="banner-item">
-                            <img src="./assets/images/banner 2.jpg" alt="">
+        <div class="tutorial">
+            <!-- banner -->
+            <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="banner-item">
+                                <img src="./assets/images/banner 2.jpg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="banner-item">
-                            <img src="./assets/images/banner 1.jpg" alt="">
+                        <div class="col-lg-6">
+                            <div class="banner-item">
+                                <img src="./assets/images/banner 1.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tutorial">
-            <div class="tutorial-container">
+            <div id="tutorial" class="tutorial-container">
                 <div class="row">
                     <div class="col-12 mb-4">
                         <div class="why-title product-title text-center">
@@ -972,7 +976,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div id="register" class="col-lg-3 col-md-6">
                         <a href="" class="tutorial-button">
                             Hướng dẫn
                             <br>
