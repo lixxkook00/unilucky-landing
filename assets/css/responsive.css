@@ -17,6 +17,107 @@
     
 }
 
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    /* utils */
+    .intro-wrapper-content{
+        flex-direction: column;
+    }
+
+    .intro-title-img,
+    .intro-title,
+    .intro-slider{
+        width: 100%;
+    }
+
+    .intro-wrapper .swiper-slide{
+        transform: scale(0.9) !important;
+    }
+
+    .intro-wrapper .swiper-slide.swiper-slide-active{
+        transform: scale(1) !important;
+    }
+    
+    .bg-header{
+        background: url(../images/backgroud-mb.jpg) no-repeat top center;
+        background-size: 100% 100%;
+    }
+
+    .button-img{
+        width: 70px;
+        margin-bottom: 20px;
+    }
+
+    .main-video {
+        background: #F7F8F7 url(../images/bg-main-video.png) no-repeat center center;
+        background-size: 490% 100%;
+        padding: 50px 0 100px;
+        color: #fff;
+        min-height: 520px;
+    }
+
+    .why-icon-animation{
+        display: none !important;
+    }
+
+    .community-content{
+        position: relative;
+        transform: translateY(0)
+    }
+
+    .community{
+       margin-bottom: 20px;
+    }
+
+    .product{
+        margin-top: 30px;
+    }
+
+    .why-title{
+        font-size: 18px;
+    }
+
+    .product-value{
+        font-size: 30px;
+    }
+
+    .product-slider-2{
+        display: none;
+    }
+
+    .tutorial-button{
+        height: 90px;
+    }
+
+    .footer-logo{
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-item-value{
+        font-size: 14px;
+    }
+
+    .footer-item-title{
+        align-items: flex-start;
+    }
+
+    .footer{
+        padding: 70px 0 30px;
+    }
+
+    .bg-bottom{
+        padding-bottom: 80px;
+    }
+
+    /* --------- */
+}
+
+
 /* Tablet Only */
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -33,6 +134,10 @@
     .we-button{
         margin-bottom: 20px;
     }
+
+    .intro-title--wrapper img{
+        padding: 90px;
+    }
 }
 
 /* Mobile Only */
@@ -41,6 +146,7 @@
         display: none !important;
     }
 
+    
     .centering-mobile{
         display: flex;
         justify-content: center;

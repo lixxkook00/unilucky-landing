@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/images/about-logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Unilucky.png">
     <title>UNILUCKY</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -57,7 +57,7 @@
     <!-- HEADER MOBILE -->
     <div class="header-mobile hide-on-pc">
         <div class="header-mobile-right">
-            <img src="./assets/images/header-logo.png" alt="">
+            <img src="./assets/images/Unilucky logo.png" alt="">
         </div>
         <div class="header-mobile-left">
             <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
@@ -81,7 +81,7 @@
             </li>
             <li class="soft-menu__item hehe">
                 <a class="" href="#product" data-address="machine">
-                    <i class="fa-solid fa-cart-shopping"></i>Sản phẩm nổi bật
+                    <i class="fa-solid fa-cart-shopping"></i>Điểm nổi bật
                 </a>
 
                 <!-- sub -->
@@ -92,19 +92,12 @@
             </li>
             <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
                 <a class="" href="#feedback" data-address="vision">
-                    <i class="fa-solid fa-comments"></i>Phản hồi khách hàng
+                    <i class="fa-solid fa-comments"></i>Hướng dẫn
                 </a>
             </li>
 
-            <li onclick="toggleNavMobile()" class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#feedback" data-address="vision">
-                    <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
-                </a>
-            </li>
-
-            <div id="registerMobile" class="soft-menu__item soft-menu__item-sub" type="button" data-toggle="modal"
-                data-target="#exampleModal">
-                <a class="" data-address="vision">
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a href="https://unilucky.vn/account/login">
                     <i class="fa-sharp fa-solid fa-user-plus"></i> Đăng ký
                 </a>
             </div>
@@ -156,9 +149,16 @@
         <div class="intro-wrapper centering">
             <div class="intro-wrapper-content">
                 <div class="intro-title centering">
-                    <img src="./assets/images/text1.png" alt="">
+                    <div class="intro-title-img">
+                        <div id="intro-title--wrapper" class="intro-title--wrapper">
+                            <img src="./assets/images/text1.png" alt="">
+                            <img src="./assets/images/text2.png" alt="">
+                            <img src="./assets/images/text3.png" alt="">
+                            <img src="./assets/images/text4.png" alt="">
+                        </div>
+                    </div>
 
-                    <a href="">
+                    <a href="https://unilucky.vn/">
                         <img class="button-img" src="./assets/images/button.png" alt="">
                     </a>
                 </div>
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="intro-slider-control">
+                    <!-- <div class="intro-slider-control">
                         <div class="intro-slider-control-item centering">
                             <i class="fa-solid fa-chevron-left"></i>
                         </div>
@@ -199,12 +199,14 @@
                         <div class="intro-slider-control-item centering">
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
+
     </div>
 
+    <!-- NOTI -->
     <div class="noti">
         <div class="noti-icon centering">
             <i class="fa-solid fa-volume-high text-light"></i>
@@ -289,31 +291,35 @@
         </marquee>
     </div>
 
+    <!-- MAIN VIDEO -->
     <div class="main-video">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="video">
-                        <div class="video-main">
-                            <img src="" alt="">
+                    <div class="video centering">
+                        <div class="video-main ">
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">
+                                <img class="video-main-cart" src="./assets/images/giohang.png" alt="">
+                            </a>
+
+                            <div class="why-icon-animation why-icon-animation-1">
+                                <img src="./assets/images/button share.png" alt="">
+                            </div>
+
+                            <div class="why-icon-animation why-icon-animation-2">
+                                <img src="./assets/images/button sub.png" alt="">
+                            </div>
+
+
+                            <div class="why-icon-animation why-icon-animation-3">
+                                <img src="./assets/images/button cmt.png" alt="">
+                            </div>
+
+                            <div class="why-icon-animation why-icon-animation-4">
+                                <img src="./assets/images/button like.png" alt="">
+                            </div>
                         </div>
 
-                        <div class="why-icon-animation why-icon-animation-1">
-                            <img src="" alt="">
-                        </div>
-
-                        <div class="why-icon-animation why-icon-animation-2">
-                            <img src="" alt="">
-                        </div>
-
-
-                        <div class="why-icon-animation why-icon-animation-3">
-                            <img src="" alt="">
-                        </div>
-
-                        <div class="why-icon-animation why-icon-animation-4">
-                            <img src="" alt="">
-                        </div>
                     </div>
                 </div>
 
@@ -504,7 +510,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <section class="card">
                         <div class="card__side card__side--front">
                             <div class="why-item">
@@ -536,7 +542,7 @@
                     </section>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <section class="card">
                         <div class="card__side card__side--front">
                             <div class="why-item">
@@ -575,7 +581,7 @@
                     </section>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <section class="card">
                         <div class="card__side card__side--front">
                             <div class="why-item">
@@ -612,7 +618,7 @@
                     </section>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <section class="card">
                         <div class="card__side card__side--front">
                             <div class="why-item">
@@ -645,7 +651,7 @@
                     </section>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <section class="card">
                         <div class="card__side card__side--front">
                             <div class="why-item">
@@ -683,7 +689,7 @@
                     </section>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <section class="card">
                         <div class="card__side card__side--front">
                             <div class="why-item">
@@ -734,35 +740,45 @@
     </div>
 
     <!-- Community -->
-    <div class="community">
+    <div class="community hidden-m-t">
         <img src="./assets/images/banner.jpg" alt="">
 
         <div class="community-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="community-item">
                             <img src="./assets/images/button1.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="community-item">
                             <img src="./assets/images/button2.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="community-item">
                             <img src="./assets/images/button3.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="community-item">
                             <img src="./assets/images/button4.png" alt="">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="community-mobile hidden-pc-low hide-on-pc">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./assets/images/banner Mobile.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -885,12 +901,12 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="banner-item">
-                            <img src="./assets/images/banner 1.jpg" alt="">
+                            <img src="./assets/images/banner 2.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="banner-item">
-                            <img src="./assets/images/banner 2.jpg" alt="">
+                            <img src="./assets/images/banner 1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -906,27 +922,27 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2 col-6">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <img src="./assets/images/buoc1.png" alt="">
                     </div>
 
-                    <div class="col-lg-2 col-6">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <img src="./assets/images/buoc2.png" alt="">
                     </div>
 
-                    <div class="col-lg-2 col-6">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <img src="./assets/images/buoc3.png" alt="">
                     </div>
 
-                    <div class="col-lg-2 col-6">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <img src="./assets/images/buoc4.png" alt="">
                     </div>
 
-                    <div class="col-lg-2 col-6">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <img src="./assets/images/buoc5.png" alt="">
                     </div>
 
-                    <div class="col-lg-2 col-6">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <img src="./assets/images/buoc6.png" alt="">
                     </div>
                 </div>
@@ -934,7 +950,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <a href="" class="tutorial-button">
                             Giới thiệu về
                             <br>
@@ -942,21 +958,21 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <a href="" class="tutorial-button">
                             Hướng dẫn mua vé <br>
                             dự thưởng
                         </a>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <a href="" class="tutorial-button">
                             Review web mua hàng <br>
                             may mắn
                         </a>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <a href="" class="tutorial-button">
                             Hướng dẫn
                             <br>
@@ -1021,37 +1037,29 @@
                         <div class="feedback">
                             <div class="swiper swiperFeedback">
                                 <div class="swiper-wrapper">
+
                                     <div class="swiper-slide">
                                         <div class="feedback-item">
                                             <div class="feedback-infor">
                                                 <div class="feedback-avt">
-                                                    <img src="https://cdn.britannica.com/58/129958-050-C3FE2DD2/Adolf-Hitler-1933.jpg"
-                                                        alt="">
+                                                    <img src="./assets/images/feedback-avt-1.jpg" alt="">
                                                 </div>
                                                 <div class="">
                                                     <div class="feedback-name">
-                                                        Adolf Hitler
+                                                        Anh Chiến
                                                     </div>
                                                     <div class="feedback-job">
-                                                        God
+                                                        Gò Vấp
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="feedback-content">
-                                                Adolf Hitler (German: [ˈadoːlf ˈhɪt.lɐ] (listen); 20 April 1889 – 30
-                                                April 1945) was
-                                                an
-                                                Austrian-born German politician
-                                                who led Germany from 1933 until his death in 1945. He rose to power as
-                                                the leader of
-                                                the
-                                                Nazi Party,[a] becoming the
-                                                chancellor in 1933 and then assuming the title of Führer und
-                                                Reichskanzler in
-                                                1934.[b]
-                                                During his dictatorship, he
-                                                initiated World War II in Europe by invading Poland on 1 September 1939.
+                                                Cảm ơn UNILUCKY đã tạo ra sân chơi vui nhộn và giá trị cho người tiêu
+                                                dùng. Đang cần thay bàn phím thay vì ra ngoài
+                                                mua, tôi chọn lên Unilucky tham gia mã dự thưởng và may mắn chỉ với 5k
+                                                đã được trúng giải Bàn Phím Cơ có dây Gaming
+                                                Rapoo giá thị trường lên đến 1,110,000vnd. Tôi nhất định lan tỏa điều
+                                                tuyệt vời này đến bạn bè.
                                             </div>
                                         </div>
                                     </div>
@@ -1060,33 +1068,26 @@
                                         <div class="feedback-item">
                                             <div class="feedback-infor">
                                                 <div class="feedback-avt">
-                                                    <img src="https://cdn.britannica.com/58/129958-050-C3FE2DD2/Adolf-Hitler-1933.jpg"
-                                                        alt="">
+                                                    <img src="./assets/images/feedback-avt-2.jpg" alt="">
                                                 </div>
                                                 <div class="">
                                                     <div class="feedback-name">
-                                                        Adolf Hitler
+                                                        Thu Ngọc
                                                     </div>
                                                     <div class="feedback-job">
-                                                        God
+                                                        Bình Dương
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="feedback-content">
-                                                Adolf Hitler (German: [ˈadoːlf ˈhɪt.lɐ] (listen); 20 April 1889 – 30
-                                                April 1945) was
-                                                an
-                                                Austrian-born German politician
-                                                who led Germany from 1933 until his death in 1945. He rose to power as
-                                                the leader of
-                                                the
-                                                Nazi Party,[a] becoming the
-                                                chancellor in 1933 and then assuming the title of Führer und
-                                                Reichskanzler in
-                                                1934.[b]
-                                                During his dictatorship, he
-                                                initiated World War II in Europe by invading Poland on 1 September 1939.
+                                                Chị Rất ấn tượng với cách thức kết nối hàng hóa đến tay người tiêu
+                                                dùng ở Unilucky. Hộp này chị mua cửa hàng bình
+                                                thường cũng gần 400k mà tham gia Unilucky chị may mắn trúng giải chỉ tốn
+                                                có 2,000đ để sở hữu thôi. Quá tuyệt vời, Mà chị
+                                                thấy hay nên cũng chia sẻ bạn bè, lại được Unilucky tặng lại 5% hoa hồng
+                                                giới thiệu nữa. Tự nhiên được xài sp siêu rẻ
+                                                còn có thêm tiền. Chị cảm ơn Unilucky và đội support nhiều.
                                             </div>
                                         </div>
                                     </div>
@@ -1095,33 +1096,22 @@
                                         <div class="feedback-item">
                                             <div class="feedback-infor">
                                                 <div class="feedback-avt">
-                                                    <img src="https://cdn.britannica.com/58/129958-050-C3FE2DD2/Adolf-Hitler-1933.jpg"
-                                                        alt="">
+                                                    <img src="./assets/images/feedback-avt-3.jpg" alt="">
                                                 </div>
                                                 <div class="">
                                                     <div class="feedback-name">
-                                                        Adolf Hitler
+                                                        Ngọc Dung
                                                     </div>
                                                     <div class="feedback-job">
-                                                        God
+                                                        Vũng Tàu
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="feedback-content">
-                                                Adolf Hitler (German: [ˈadoːlf ˈhɪt.lɐ] (listen); 20 April 1889 – 30
-                                                April 1945) was
-                                                an
-                                                Austrian-born German politician
-                                                who led Germany from 1933 until his death in 1945. He rose to power as
-                                                the leader of
-                                                the
-                                                Nazi Party,[a] becoming the
-                                                chancellor in 1933 and then assuming the title of Führer und
-                                                Reichskanzler in
-                                                1934.[b]
-                                                During his dictatorship, he
-                                                initiated World War II in Europe by invading Poland on 1 September 1939.
+                                                Wow! Thật tuyệt vời. Chuột Gaming MSI 480k, mà quá may mắn tôi chỉ
+                                                mua 50% mã dự thưởng chỉ mất 260k mà đã trúng được
+                                                rồi! Cảm ơn Unilucky, sẽ ủng hộ thêm nhiều sản phẩm khác!
                                             </div>
                                         </div>
                                     </div>
@@ -1130,36 +1120,112 @@
                                         <div class="feedback-item">
                                             <div class="feedback-infor">
                                                 <div class="feedback-avt">
-                                                    <img src="https://cdn.britannica.com/58/129958-050-C3FE2DD2/Adolf-Hitler-1933.jpg"
-                                                        alt="">
+                                                    <img src="./assets/images/feedback-avt-4.jpg" alt="">
                                                 </div>
                                                 <div class="">
                                                     <div class="feedback-name">
-                                                        Adolf Hitler
+                                                        Quỳnh Như
                                                     </div>
                                                     <div class="feedback-job">
-                                                        God
+                                                        Tp Hcm
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="feedback-content">
-                                                Adolf Hitler (German: [ˈadoːlf ˈhɪt.lɐ] (listen); 20 April 1889 – 30
-                                                April 1945) was
-                                                an
-                                                Austrian-born German politician
-                                                who led Germany from 1933 until his death in 1945. He rose to power as
-                                                the leader of
-                                                the
-                                                Nazi Party,[a] becoming the
-                                                chancellor in 1933 and then assuming the title of Führer und
-                                                Reichskanzler in
-                                                1934.[b]
-                                                During his dictatorship, he
-                                                initiated World War II in Europe by invading Poland on 1 September 1939.
+                                                Tôi rất ấn tượng với cách mua sắm mới này của Unilucky, Nó giúp tôi
+                                                không quá áp lực giá cả khi mua sản phẩm có giá
+                                                trị. Bên cạnh đó, tôi cũng có thêm một kênh tiếp thị liên kết thú vị và
+                                                dễ chia sẻ giúp tôi gia tăng thu nhập mỗi tháng.
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="feedback-item">
+                                            <div class="feedback-infor">
+                                                <div class="feedback-avt">
+                                                    <img src="./assets/images/feedback-avt-5.jpg" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <div class="feedback-name">
+                                                        Vĩnh Thịnh
+                                                    </div>
+                                                    <div class="feedback-job">
+                                                        Tp Hcm
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="feedback-content">
+                                                Thay vì bỏ ra 32tr để sở hữu một dòng điện thoại cao cấp, tôi có thể
+                                                thử vận may của mình bằng cách sở hữu mã dự
+                                                thưởng trên UniLucky chỉ với 65k
+                                                Nếu may mắn tôi có thể sở hữu một chiếc điện thoại 32tr mà tôi nghĩ hầu
+                                                hết mọi người đều muốn sỡ hữu một chiếc. Còn nếu
+                                                không thì số tiền quy đổi mã may mắn đó sẽ được hoàn lại vào ví mua sắm
+                                                trên ứng dụng, bên cạnh đó tôi còn được tặng một
+                                                vài voucher mua sắm nữa. Tôi rất thích trải nghiệm của Unilucky.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="feedback-item">
+                                            <div class="feedback-infor">
+                                                <div class="feedback-avt">
+                                                    <img src="./assets/images/feedback-avt-6.jpg" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <div class="feedback-name">
+                                                        Mạnh Cường
+                                                    </div>
+                                                    <div class="feedback-job">
+                                                        Hà Nội
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="feedback-content">
+                                                Với góc nhìn doanh nghiệp, tôi thích cách Unilucky kết nối khách
+                                                hàng, cách mang sp đến tay người tiêu dùng một cách
+                                                thoải mái, nhẹ nhàng hơn. Cách thức vận hành giúp doanh nghiệp đưa sản
+                                                phẩm đến tay người tiêu dùng nhanh chóng hơn. Tôi
+                                                ấn tượng và chúc UNILUCKY sẽ bùng nổ chương trình hấp dẫn này. ( đối tác
+                                                sp với UNILUCKY)
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="feedback-item">
+                                            <div class="feedback-infor">
+                                                <div class="feedback-avt">
+                                                    <img src="./assets/images/feedback-avt-7.jpg" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <div class="feedback-name">
+                                                        Mỹ Hạnh
+                                                    </div>
+                                                    <div class="feedback-job">
+                                                        Đồng Nai
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="feedback-content">
+                                                Tôi rất thích làm việc online, việc kiếm thu nhập tại nhà giúp tôi
+                                                chăm sóc con cái được tốt hơn. Tôi được một người
+                                                bạn chia sẻ về Unilucky, tôi cũng trải nghiệm mua hàng may mắn, rất thú
+                                                vị. Nhưng điều tôi tâm đắc nhất chính là cơ hội
+                                                kết nối cộng đồng người tiêu dùng mua sắm. Và tôi có thể xây dựng được
+                                                nguồn thu nhập thụ đồng từ việc tiêu dùng giá rẻ
+                                                tại Unilucky thông qua những voucher và promotion hấp dẫn. Cảm ơn
+                                                Unilucky.
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -1292,7 +1358,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- SCROLL TO TOP -->
     <div class="scroll-to-top">
@@ -1301,8 +1366,16 @@
 
     <!-- LOADING -->
     <div id="loading" class="loading centering">
-        <img src="./assets/images/about-logo.png" alt="">
-        <img src="./assets/images/ loading.gif" alt="">
+        <img src="./assets/images/Unilucky logo.png" alt="">
+        <div class="loadingio-spinner-ellipsis-hb80rj1v5n9">
+            <div class="ldio-g8exh9uea75">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
 
     <!-- Modal -->
@@ -1310,63 +1383,12 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-close-button" type="button" data-dismiss="modal">
-                    <i class="fa-solid fa-circle-xmark"></i>
+                <div class="modal-video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NrZnJMuhzuQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-
-                <form class="login" id="formRegisterDownline" method="post">
-
-                    <div class="screen__content_logo" style="background-image: url('./assets/images/header-logo.png')">
-
-                    </div>
-                    <div>
-                        <div class="d-flex">
-                            <div class="signin__field">
-                                <i class="signin__icon fa-solid fa-circle-info"></i>
-                                <input type="text" class="login__input" name="FullName" placeholder="Họ và tên">
-                            </div>
-                            <div class="signin__field">
-                                <i class="signin__icon fa-solid fa-user"></i>
-                                <input type="text" class="login__input" name="UserName" placeholder="Tên đăng nhập">
-                            </div>
-                        </div>
-
-                        <div class="d-flex">
-                            <div class="signin__field">
-                                <i class="signin__icon fa-solid fa-lock"></i>
-                                <input type="password" class="login__input" name="Password" placeholder="Mật khẩu">
-                            </div>
-                            <div class="signin__field">
-                                <i class="signin__icon fa-solid fa-lock"></i>
-                                <input type="password" class="login__input" name="ConfirmPassword"
-                                    placeholder="Xác nhận lại mật khẩu">
-                            </div>
-                        </div>
-                        <div class="signin__field">
-                            <i class="signin__icon fa-solid fa-paper-plane"></i>
-                            <input type="text" class="login__input" name="Email" placeholder="Email">
-                        </div>
-                        <div class="signin__field">
-                            <i class="signin__icon fa-solid fa-user"></i>
-                            <input type="text" class="login__input" name="Sponsor"
-                                placeholder="Tên đăng nhập người giới thiệu">
-                        </div>
-
-                        <div class="signin__field uto-dk text-center">
-                            Bằng việc nhấn nút Đăng ký, bạn đã đồng ý với <a href="" target="_blank">điều khoản sử
-                                dụng</a> và <a href="" target="_blank">chính sách bảo mật</a> của Trí tuệ tự nhiên.
-                        </div>
-
-                        <div class="centering">
-                            <button class="button login__submit" type="submit">
-                                <span class="button__text">Đăng ký</span>
-                                <i class="button__icon fa fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <input name="__RequestVerificationToken" type="hidden"
-                        value="CfDJ8PXSB_sOBOBDogQu84pMeLtD-LGDWkyo768jWzxrAUARJlOWG_4Hy2HOJ6-Kt2hSQaP6YcPWda89zm-luyzLwjyCI5WgxUGeMXFzxXydF46PltBz5aCMY634pCE43eK9DFubkdMGQZU2Oq_MlKXfwgs">
-                </form>
             </div>
         </div>
     </div>

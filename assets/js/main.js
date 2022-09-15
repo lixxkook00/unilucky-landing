@@ -12,7 +12,7 @@ $('.soft-menu__list').onclick = (e) => {
 
 $('.scroll-to-top').onclick = () => {
     window.scrollTo({
-        top: 100,
+        top: 0,
         left: 100,
         behavior: 'smooth'
     });
@@ -25,12 +25,13 @@ window.addEventListener('load', (event) => {
 
 // SLIDER
 
-var swiper = new Swiper(".swiper-partner", {
+var swiper1 = new Swiper(".swiper-partner", {
     slidesPerView: 4,
     spaceBetween: 10,
+    slideToClickedSlide: true,
     // auto
     autoplay: {
-        delay: 3000,
+        delay: 3500,
         disableOnInteraction: false,
     },
     loop: true,
@@ -41,7 +42,7 @@ var swiper = new Swiper(".swiper-partner", {
     breakpoints: {
         // when window width is >= 480px
         120: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 2
         },
         // when window width is >= 640px
@@ -53,15 +54,15 @@ var swiper = new Swiper(".swiper-partner", {
         slidesPerView: 4,
         spaceBetween: 1
         }
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    }
 });
 
+swiper1.on('transitionEnd', function() {
+    const currentIndex = swiper1.realIndex
+    $('#intro-title--wrapper').style.transform = `translateX(-${currentIndex*25}%)`
+});
 
-var swiper = new Swiper(".swiperFeedback", {
+var swiper2 = new Swiper(".swiperFeedback", {
     slidesPerView: 1,
     spaceBetween: 10,
     // auto
@@ -96,7 +97,7 @@ var swiper = new Swiper(".swiperFeedback", {
     },
 });
 
-var swiper = new Swiper(".swiperPartner", {
+var swiper3 = new Swiper(".swiperPartner", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
@@ -112,7 +113,7 @@ var swiper = new Swiper(".swiperPartner", {
     breakpoints: {
         // when window width is >= 480px
         120: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 2
         },
         // when window width is >= 640px
@@ -132,7 +133,7 @@ var swiper = new Swiper(".swiperPartner", {
     },
 });
 
-var swiper = new Swiper(".swiper-product-1", {
+var swiper4 = new Swiper(".swiper-product-1", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
@@ -150,13 +151,13 @@ var swiper = new Swiper(".swiper-product-1", {
     breakpoints: {
         // when window width is >= 480px
         120: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 2
         },
         // when window width is >= 640px
        // when window width is >= 640px
         740: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 12
         },
         1023: {
@@ -166,7 +167,7 @@ var swiper = new Swiper(".swiper-product-1", {
     },
 });
 
-var swiper = new Swiper(".swiper-product-2", {
+var swiper5 = new Swiper(".swiper-product-2", {
     slidesPerView: 3,
     spaceBetween: 10,
     // auto
@@ -263,13 +264,13 @@ window.addEventListener("load", function(){
         keyboard: false
     })
 
-    document.querySelector(".modal-close-button").onclick = () => {
-        myModal.hide();
-    }
+    // document.querySelector(".modal-close-button").onclick = () => {
+    //     myModal.hide();
+    // }
 
-    document.querySelector("#registerMobile").onclick = () => {
-        toggleNavMobile()
-        myModal.show();
-    }
+    // document.querySelector("#registerMobile").onclick = () => {
+    //     toggleNavMobile()
+    //     myModal.show();
+    // }
     
 })
