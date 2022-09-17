@@ -154,6 +154,18 @@
         display: none !important;
     }
 
+    .intro-title--wrapper{
+        height: 30vh;
+    }
+
+    .button-img{
+        height: 50px;
+    }
+
+    .intro-card img {
+        width: 90%;
+    }
+
     .modal-video-content{
         height: 53%;
         position: absolute;

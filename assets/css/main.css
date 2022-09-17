@@ -984,9 +984,18 @@ marquee{
   width: 600%;
 }
 
-.intro-title--wrapper img{
+.intro-title-img-item{
   width: 16.6667%;
   padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-title-img-item img{
+  width: 100%;
+  height: auto;
 }
 
 .why-item-content{
