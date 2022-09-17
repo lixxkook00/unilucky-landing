@@ -274,3 +274,11 @@ window.addEventListener("load", function(){
     // }
     
 })
+
+const nameThisShit = /:\/\/([^\/]+).unilucky.vn/.exec(window.location.href)
+// const nameThisShit = /:\/\/([^\/]+).unilucky.vn/.exec("https://trituetunhienlucky.unilucky.vn/")
+const refNameThisShit = nameThisShit[1]
+ 
+$$('.ref-link').forEach((item) => {
+    item.href = `https://unilucky.vn/r/${refNameThisShit}`
+});
